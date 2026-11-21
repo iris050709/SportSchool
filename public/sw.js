@@ -1,5 +1,5 @@
-const CACHE_NAME = "sportschool-v1";
-const APP_SHELL = ["/", "/index.html", "/manifest.webmanifest", "/icons/icon-192.svg", "/icons/icon-512.svg"];
+const CACHE_NAME = "sportschool-v2";
+const APP_SHELL = ["/", "/index.html", "/manifest.webmanifest", "/icons/icon-1.png", "/icons/icon-2.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
